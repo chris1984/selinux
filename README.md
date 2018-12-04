@@ -3,6 +3,8 @@ SELinux
 
 Configures SELinux on hosts.
 
+[![Build Status](https://travis-ci.org/chris1984/selinux.svg?branch=master)](https://travis-ci.org/chris1984/selinux)
+
 Requirements
 ------------
 
