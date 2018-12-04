@@ -1,0 +1,5 @@
+---
+# Defaults file for chris1984.selinux
+
+selinux_policy:
+selinux_state:

@@ -1,0 +1,19 @@
+---
+# tasks file for chris1984.selinux
+
+- name: Install libselinux-python bindings on host
+  yum:
+    name: libselinux-python
+    state: present
+
+- name: Set our SELinux file and ensure config is present
+  template:
+    src: templates/selinux_config.j2
+    dest: /etc/selinux/config
+    owner: root
+    group: root
+
+- name: Set SELinux policy and state on host
+  selinux:
+    policy: "{{ selinux_policy }}"
+    state: "{{ selinux_state }}"
