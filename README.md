@@ -1,7 +1,7 @@
 SELinux
 =======
 
-Configures SELinux.
+Configures SELinux on hosts.
 
 Requirements
 ------------
@@ -11,10 +11,14 @@ This role requires Ansible 2.0 or higher.
 Role Variables
 --------------
 
+* Variables are all in role/defaults/main.yml
+
+```markdown
 | Name           | Default    | Description                                       |
 |----------------|------------|---------------------------------------------------|
 | selinux_policy | targeted   | SELinux policy type (targeted or mls)             |
 | selinux_state  | permissive | SELinux state (permissive, enforcing or disabled) |
+```
 
 Dependencies
 ------------
@@ -56,4 +60,5 @@ MIT
 Author Information
 ------------------
 
-Chris Roberts
+* Chris Roberts - chrobert@redhat.com  - https://www.linkedin.com/in/croberts84/
+* Work at Redhat on the Foreman/Katello projects and also maintain fog-vsphere.
